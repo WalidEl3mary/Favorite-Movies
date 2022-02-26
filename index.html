@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Favorite Movies new App</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="backdrop"></div>
+  <div class="modal card" id="add-modal">
+    <div class="modal__content">
+      <label for="title">Movie Title</label>
+      <input type="text" name="title" id="title" />
+      <label for="image-url">Image URL</label>
+      <input type="text" name="image-url" id="image-url" />
+      <label for="rating">Your Rating</label>
+      <input type="number" step="1" max="5" min="1" name="rating" id="rating" />
+    </div>
+    <div class="modal__actions">
+      <button id="cancelBtn" class="btn btn--passive" >Cancel</button>
+      <button id="addBtn" class="btn btn--success">Add</button>
+    </div>
+  </div>
+
+
+  <header>
+    <h1>Favorite Movies</h1>
+    <button  id="openBtn">ADD MOVIE</button>
+  </header>
+
+  <main>
+    <section id="entry-text" class="card">
+      <p>Your personal movie database!</p>
+    </section>
+    <ul id="movie-list"></ul>
+  </main>
+</body>
+
+</html>
